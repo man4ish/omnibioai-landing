@@ -50,20 +50,27 @@ All installers include a **30-day free trial license**. Access is gated behind a
 
 ---
 
-## Key Platform Stats (v0.7.0-beta)
+## Key Platform Stats (reviewed 2026-08-23)
 
-Pulled directly from the live site's stat bar (`index.html`, verified
-2026-08-07) — this table previously named v0.4.0-beta and numbers from
-that era, several versions behind the site's actual current downloads:
+The landing page combines repository-specific catalog figures. They are not
+interchangeable counts: TES reports configured tool definitions, Workbench
+reports enabled plugins, and container availability varies by deployment.
 
 | Metric | Value |
 |--------|-------|
-| Tools | 12,110+ |
-| Plugins | 225 |
-| Container images | 1,120+ |
+| Studio catalog tools | 12,110+ |
+| TES tool definitions | 15,012 |
+| Workbench plugins | 351 |
+| Container inventory | Historical 1,120+ baseline; deployment-dependent |
+| Workflow bundles | 600+ |
 | Agentic pipelines | 10+ |
 | Knowledge domains | 150+ |
-| Microservices | 28 |
+| Microservices | 40 services in the current Studio Compose stack |
+
+The Studio download links on this page currently target the private-beta
+`v0.7.0-beta` artifacts. A stable `v0.7.0` release also exists in the Studio
+repository; update the links and version labels together when switching the
+landing page to stable distribution.
 
 ---
 
@@ -128,7 +135,7 @@ Fully offline after first boot. Internet required only for initial Docker image 
 
 ```
 OmniBioAI Studio UI (Desktop Frontend)
-         │ Handshake (Sub-3ms Latency)
+         │ Service handshake & orchestration
 Agentic AI Orchestration (LangGraph / Ollama / HuggingFace)
          │ Orchestration & Data Mapping
 BioFlow Runtime Engine (Nextflow / WDL / Snakemake)
